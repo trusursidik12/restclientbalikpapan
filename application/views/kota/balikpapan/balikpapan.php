@@ -116,21 +116,26 @@
 
   <script>
     $(function() {
+      const data = [
+        <?php foreach($balikpapanbbispu as $bbispu) : ?>
+          <?= $bbispu['pm25'] ?>,
+          <?= $bbispu['so2'] ?>,
+          <?= $bbispu['no2'] ?>
+        <?php endforeach ?>
+      ];
+      const colours = data.map((value) => value > 0 && value <= 50 ? '#28a745' : value > 50 && value <= 100 ? '#007bff' : value > 100 && value <= 200 ? '#ffc107' : value > 200 && value <= 300 ? '#dc3545' : value > 300 ? '#343a40' : 'purple');
+
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
           labels: ["PM2,5", "SO2", "NO2"],
           datasets: [{
               label: '# ISPU',
-              backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-              borderColor: window.chartColors.blue,
+              // backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+              // borderColor: window.chartColors.blue,
+              backgroundColor: colours,
+              borderColor: colours,
               borderWidth: 1,
-              data: [
-                <?php foreach($balikpapanbbispu as $bbispu) : ?>
-                  <?= $bbispu['pm25'] ?>,
-                  <?= $bbispu['so2'] ?>,
-                  <?= $bbispu['no2'] ?>
-                <?php endforeach ?>
-              ]
+              data: data
           }]
    
       };
@@ -193,21 +198,24 @@
   </script>
   <script>
     $(function() {
+       const data = [
+        <?php foreach($balikpapanbbdata as $bbdata) : ?>
+          <?= $bbdata['pm25'] ?>,
+          <?= $bbdata['so2'] ?>,
+          <?= $bbdata['no2'] ?>
+        <?php endforeach ?>
+      ];
+      const colours = data.map((value) => value > 0 && value <= 50 ? '#28a745' : value > 50 && value <= 100 ? '#007bff' : value > 100 && value <= 200 ? '#ffc107' : value > 200 && value <= 300 ? '#dc3545' : value > 300 ? '#343a40' : 'purple');
+
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
           labels: ["PM2,5", "SO2", "NO2"],
           datasets: [{
               label: '# DATA',
-              backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-              borderColor: window.chartColors.blue,
+              backgroundColor: colours,
+              borderColor: colours,
               borderWidth: 1,
-              data: [
-                <?php foreach($balikpapanbbdata as $bbdata) : ?>
-                  <?= $bbdata['pm25'] ?>,
-                  <?= $bbdata['so2'] ?>,
-                  <?= $bbdata['no2'] ?>
-                <?php endforeach ?>
-              ]
+              data: data
           }]
    
       };
@@ -270,21 +278,24 @@
   </script>
   <script>
     $(function() {
+      const data = [
+        <?php foreach($balikpapanpbispu as $pbispu) : ?>
+          <?= $pbispu['pm25'] ?>,
+          <?= $pbispu['so2'] ?>,
+          <?= $pbispu['no2'] ?>
+        <?php endforeach ?>
+      ];
+      const colours = data.map((value) => value > 0 && value <= 50 ? '#28a745' : value > 50 && value <= 100 ? '#007bff' : value > 100 && value <= 200 ? '#ffc107' : value > 200 && value <= 300 ? '#dc3545' : value > 300 ? '#343a40' : 'purple');
+
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
           labels: ["PM2,5", "SO2", "NO2"],
           datasets: [{
               label: '# ISPU',
-              backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-              borderColor: window.chartColors.blue,
+              backgroundColor: colours,
+              borderColor: colours,
               borderWidth: 1,
-              data: [
-                <?php foreach($balikpapanpbispu as $pbispu) : ?>
-                  <?= $pbispu['pm25'] ?>,
-                  <?= $pbispu['so2'] ?>,
-                  <?= $pbispu['no2'] ?>
-                <?php endforeach ?>
-              ]
+              data: data
           }]
    
       };
@@ -347,21 +358,24 @@
   </script>
   <script>
     $(function() {
+      const data = [
+        <?php foreach($balikpapanpbdata as $bbdata) : ?>
+          <?= $bbdata['pm25'] ?>,
+          <?= $bbdata['so2'] ?>,
+          <?= $bbdata['no2'] ?>
+        <?php endforeach ?>
+      ];
+      const colours = data.map((value) => value > 0 && value <= 50 ? '#28a745' : value > 50 && value <= 100 ? '#007bff' : value > 100 && value <= 200 ? '#ffc107' : value > 200 && value <= 300 ? '#dc3545' : value > 300 ? '#343a40' : 'purple');
+
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
           labels: ["PM2,5", "SO2", "NO2"],
           datasets: [{
               label: '# DATA',
-              backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-              borderColor: window.chartColors.blue,
+              backgroundColor: colours,
+              borderColor: colours,
               borderWidth: 1,
-              data: [
-                <?php foreach($balikpapanpbdata as $bbdata) : ?>
-                  <?= $bbdata['pm25'] ?>,
-                  <?= $bbdata['so2'] ?>,
-                  <?= $bbdata['no2'] ?>
-                <?php endforeach ?>
-              ]
+              data: data
           }]
    
       };
