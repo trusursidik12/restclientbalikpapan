@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>BALIKPAPAN</title>
-  <link rel="icon" href="<?=base_url()?>assets/dist/img/ptrum.png">
+  <link rel="icon" href="<?=base_url()?>assets/dist/img/balikpapan.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="<?= base_url('assets/dist/css/adminlte.min.css'); ?>">
@@ -21,7 +21,6 @@
             <div class="card">
               <div class="card-header p-2">
                 <ul class="nav nav-pills">
-                  <li class="nav-item"><a class="nav-link active" href="<?= site_url('export') ?>">EXPORT DATA</a></li>
                 </ul>
               </div><!-- /.card-header -->
               <div class="card-body">
@@ -33,34 +32,28 @@
                       <table border="1" width="100%" class="text-center">
                           <thead>
                               <tr>
-                                  <th>NO</th>
                                   <th>ISPU</th>
-                                  <th>RANGE NILAI &#127777;</th>
+                                  <th>RANGE NILAI</th>
                               </tr>
                           </thead>
                           <tbody>
                               <tr>
-                                  <td>5</td>
                                   <td>Berbahaya &#128567;</td>
                                   <td class="text-white bg-dark" style="color: #FFFFFF;"> >300 </td>
                               </tr>                        
                               <tr>
-                                  <td>4</td>
                                   <td>Sangat Tidak Sehat &#129319;</td>
                                   <td class="text-white bg-danger">201 - 300</td>
                               </tr>    
                               <tr>
-                                  <td>3</td>
                                   <td>Tidak Sehat &#128552;</td>
                                   <td class="text-white bg-warning">101 - 200</td>
                               </tr> 
                               <tr>
-                                  <td>2</td>
                                   <td>Sedang &#128578;</td>
                                   <td class="text-white bg-primary">51 - 100</td>
                               </tr>   
                               <tr>
-                                  <td>1</td>
                                   <td>Baik &#128515;</td>
                                   <td class="text-white bg-success">0 - 50</td>
                               </tr>
@@ -76,11 +69,11 @@
                         <div class="row">
                           <div class="col-sm-6">
                             <p style="font-size: 20px;"><b>ISPU</b></p>
-                            <canvas id="balikpapanbbispu" width="100" height="93"></canvas>
+                            <canvas id="balikpapanbbispu" width="100" height="100"></canvas>
                           </div>
                           <div class="col-sm-6">
                             <p style="font-size: 20px;"><b>DATA</b></p>
-                            <canvas id="balikpapanbbdata" width="100" height="93"></canvas>
+                            <canvas id="balikpapanbbdata" width="100" height="100"></canvas>
                           </div>
                         </div>
                       </div>
@@ -94,11 +87,11 @@
                         <div class="row">
                           <div class="col-sm-6">
                             <p style="font-size: 20px;"><b>ISPU</b></p>
-                            <canvas id="balikpapanpbispu" width="100" height="93"></canvas>
+                            <canvas id="balikpapanpbispu" width="100" height="100"></canvas>
                           </div>
                           <div class="col-sm-6">
                             <p style="font-size: 20px;"><b>DATA</b></p>
-                            <canvas id="balikpapanpbdata" width="100" height="93"></canvas>
+                            <canvas id="balikpapanpbdata" width="100" height="100"></canvas>
                           </div>
                         </div>
                       </div>
@@ -190,7 +183,7 @@
                 }],
                 xAxes: [{
                   ticks: {
-                    fontSize: 30
+                    fontSize: 22
                   }
                 }]
               }
@@ -267,7 +260,7 @@
                 }],
                 xAxes: [{
                   ticks: {
-                    fontSize: 30
+                    fontSize: 22
                   }
                 }]
               }
@@ -344,7 +337,7 @@
                 }],
                 xAxes: [{
                   ticks: {
-                    fontSize: 30
+                    fontSize: 22
                   }
                 }]
               }
@@ -421,7 +414,7 @@
                 }],
                 xAxes: [{
                   ticks: {
-                    fontSize: 30
+                    fontSize: 22
                   }
                 }]
               }

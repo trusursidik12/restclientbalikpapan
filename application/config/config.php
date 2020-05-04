@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //$config['base_url'] = 'http://192.168.0.3/clientsolo';
- $config['base_url'] = 'http://localhost/restclientbalikpapan/';
+ $config['base_url'] = 'http://ispumaps.id/restclientbalikpapan/';
 
 /*
 |--------------------------------------------------------------------------

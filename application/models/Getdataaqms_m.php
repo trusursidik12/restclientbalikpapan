@@ -10,7 +10,7 @@ class Getdataaqms_m extends CI_model
 	public function __construct()
 	{
 		$this->_client 	= new Client([
-			'base_uri' 	=> 'http://localhost/restserverclientbalikpapan/'
+			'base_uri' 	=> 'http://ispumaps.id/restserverclientbalikpapan/'
 		]);
 	}
 
