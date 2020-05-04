@@ -87,6 +87,8 @@ html, body, iframe , #fullheight {
 </style>
 <html>
 <head>
+<title>BALIKPAPAN</title>
+<link rel="icon" href="<?=base_url()?>assets/dist/img/balikpapan.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
