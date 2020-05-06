@@ -68,11 +68,11 @@
                         <h2>STASIUN BALIKPAPAN BARU</h2>
                         <div class="row">
                           <div class="col-sm-6">
-                            <p style="font-size: 20px;"><b>ISPU</b></p>
-                            <canvas id="balikpapanbbispu" width="100" height="100"></canvas>
+                            <p style="font-size: 20px;"><b>ISPU <?php foreach($balikpapanbbispu as $bbispu) : ?><?= '('.$bbispu['waktu'].')' ?><?php endforeach ?></b></p>
+                            <canvas id="balikpapanbbispu" width="100" height="100"></canvas>                            
                           </div>
                           <div class="col-sm-6">
-                            <p style="font-size: 20px;"><b>DATA</b></p>
+                            <p style="font-size: 20px;"><b>DATA<?php foreach($balikpapanbbdata as $bbdata) : ?><?= '('.$bbdata['waktu'].')' ?><?php endforeach ?></b></p>
                             <canvas id="balikpapanbbdata" width="100" height="100"></canvas>
                           </div>
                         </div>
@@ -86,11 +86,11 @@
                         <h2>STASIUN PLAZA BALIKPAPAN</h2>
                         <div class="row">
                           <div class="col-sm-6">
-                            <p style="font-size: 20px;"><b>ISPU</b></p>
+                            <p style="font-size: 20px;"><b>ISPU <?php foreach($balikpapanpbispu as $pbispu) : ?><?= '('.$pbispu['waktu'].')' ?><?php endforeach ?></b></p>
                             <canvas id="balikpapanpbispu" width="100" height="100"></canvas>
                           </div>
                           <div class="col-sm-6">
-                            <p style="font-size: 20px;"><b>DATA</b></p>
+                            <p style="font-size: 20px;"><b>DATA <?php foreach($balikpapanpbdata as $pbdata) : ?><?= '('.$pbdata['waktu'].')' ?><?php endforeach ?></b></p>
                             <canvas id="balikpapanpbdata" width="100" height="100"></canvas>
                           </div>
                         </div>
