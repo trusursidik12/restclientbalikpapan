@@ -95,7 +95,7 @@ html, body, iframe , #fullheight {
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <iframe src="http://iku.menlhk.go.id/aqms/"  height="100%" width="100%" style="display: block;"></iframe>
+  <iframe src="http://202.73.25.182/"  height="100%" width="100%" style="display: block;"></iframe>
 </div>
 
 <div class="mySlides fade">
