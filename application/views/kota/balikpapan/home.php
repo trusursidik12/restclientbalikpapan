@@ -99,7 +99,7 @@
   </div>
 
   <div class="mySlides fade">
-    <iframe src="http://localhost/restclientbalikpapan/chart"  height="100%" width="100%" style="display: block;"></iframe>
+    <iframe src="<?= site_url('chart') ?>"  height="100%" width="100%" style="display: block;"></iframe>
   </div>
 
   </div>
