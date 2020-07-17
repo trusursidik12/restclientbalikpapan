@@ -11,23 +11,23 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Berbahaya &#128567;</td>
+                    <td class="text-white">Berbahaya &#128567;</td>
                     <td class="text-white bg-dark" style="color: #FFFFFF;"> >300 </td>
                 </tr>                        
                 <tr>
-                    <td>Sangat Tidak Sehat &#129319;</td>
+                    <td class="text-white">Sangat Tidak Sehat &#129319;</td>
                     <td class="text-white bg-danger">201 - 300</td>
                 </tr>    
                 <tr>
-                    <td>Tidak Sehat &#128552;</td>
+                    <td class="text-white">Tidak Sehat &#128552;</td>
                     <td class="text-white bg-warning">101 - 200</td>
                 </tr> 
                 <tr>
-                    <td>Sedang &#128578;</td>
+                    <td class="text-white">Sedang &#128578;</td>
                     <td class="text-white bg-primary">51 - 100</td>
                 </tr>   
                 <tr>
-                    <td>Baik &#128515;</td>
+                    <td class="text-white">Baik &#128515;</td>
                     <td class="text-white bg-success">0 - 50</td>
                 </tr>
             </tbody>
@@ -38,8 +38,8 @@
   <div class="col-sm-6 p-3">
     <div class="row">
         <div class="col-sm-12 text-center">
-        <h2>STASIUN BALIKPAPAN BARU</h2>
-        <div class="row">
+        <h2 class="text-white">STASIUN BALIKPAPAN BARU</h2>
+        <div class="row bg-white">
             <div class="col-sm-6">
             <p style="font-size: 20px;"><b>ISPU <?php foreach($balikpapanbbispu as $bbispu) : ?><?= '('.$bbispu['waktu'].')' ?><?php endforeach ?></b></p>
             <canvas id="balikpapanbbispu" width="100" height="100"></canvas>                            
@@ -56,8 +56,8 @@
   <div class="col-sm-6 p-3">
     <div class="row">
         <div class="col-sm-12 text-center">
-        <h2>STASIUN PLAZA BALIKPAPAN</h2>
-        <div class="row">
+        <h2 class="text-white">STASIUN PLAZA BALIKPAPAN</h2>
+        <div class="row bg-white">
             <div class="col-sm-6">
             <p style="font-size: 20px;"><b>ISPU <?php foreach($balikpapanpbispu as $pbispu) : ?><?= '('.$pbispu['waktu'].')' ?><?php endforeach ?></b></p>
             <canvas id="balikpapanpbispu" width="100" height="100"></canvas>
