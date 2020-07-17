@@ -57,7 +57,7 @@
     <div class="row">
         <div class="col-sm-12 text-center">
         <h2 class="text-white">STASIUN PLAZA BALIKPAPAN</h2>
-        <div class="row bg-white">
+        <div class="row" style="background-color: white; opacity: 0.5">
             <div class="col-sm-6">
             <p style="font-size: 20px;"><b>ISPU <?php foreach($balikpapanpbispu as $pbispu) : ?><?= '('.$pbispu['waktu'].')' ?><?php endforeach ?></b></p>
             <canvas id="balikpapanpbispu" width="100" height="100"></canvas>
