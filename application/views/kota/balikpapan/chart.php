@@ -5,8 +5,8 @@
         <table border="1" width="100%" class="text-center">
             <thead>
                 <tr>
-                    <th>DATA</th>
-                    <th>RANGE NILAI</th>
+                    <th class="text-white">DATA</th>
+                    <th class="text-white">RANGE NILAI</th>
                 </tr>
             </thead>
             <tbody>
