@@ -77,7 +77,6 @@
     $(function() {
       const data = [
         <?php foreach($balikpapanbbispu as $bbispu) : ?>
-          <?= $bbispu['pm25'] ?>,
           <?= $bbispu['so2'] ?>,
           <?= $bbispu['no2'] ?>
         <?php endforeach ?>
@@ -86,7 +85,7 @@
 
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
-          labels: ["PM2,5", "SO2", "NO2"],
+          labels: ["SO2", "NO2"],
           datasets: [{
               label: '# ISPU',
               // backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
@@ -239,7 +238,6 @@
     $(function() {
       const data = [
         <?php foreach($balikpapanpbispu as $pbispu) : ?>
-          <?= $pbispu['pm25'] ?>,
           <?= $pbispu['so2'] ?>,
           <?= $pbispu['no2'] ?>
         <?php endforeach ?>
@@ -248,7 +246,7 @@
 
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
-          labels: ["PM2,5", "SO2", "NO2"],
+          labels: ["SO2", "NO2"],
           datasets: [{
               label: '# ISPU',
               backgroundColor: colours,
