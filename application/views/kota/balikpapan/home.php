@@ -90,7 +90,7 @@
       }
     </style>
   </head>
-<body style="background-image: url(<?= base_url() ?>assets/dist/img/bg_balikpapan.jpg); background-repeat:  no-repeat; background-position: center; background-size: cover;">
+<body>
 
   <div class="slideshow-container">
 

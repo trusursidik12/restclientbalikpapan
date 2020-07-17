@@ -15,7 +15,7 @@
   <script src="<?= base_url('assets/dist/js/jquery.min.js') ?>"></script>
   <script src="<?= base_url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 </head>
-<body onload="startTime()">
+<body onload="startTime()" style="background-image: url(<?= base_url() ?>assets/dist/img/bg_balikpapan.jpg); background-repeat:  no-repeat; background-position: center; background-size: cover;">
 
   <section class="content">
       <div class="container-fluid">
