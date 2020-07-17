@@ -2,7 +2,7 @@
 
   <div class="col-sm-12">
     <div class="table-responsive">
-        <table border="1" width="100%" class="text-center">
+        <table border="1" width="100%" class="text-center" style="border-color: white">
             <thead>
                 <tr>
                     <th class="text-white">DATA</th>
