@@ -163,7 +163,7 @@
           <?= $bbdata['no2'] ?>
         <?php endforeach ?>
       ];
-      const colours = data.map((value) => value > 0 && value <= 50 ? '#28a745' : value > 50 && value <= 100 ? '#007bff' : value > 100 && value <= 200 ? '#ffc107' : value > 200 && value <= 300 ? '#dc3545' : value > 300 ? '#343a40' : 'purple');
+      const colours = data.map((value) => value > 0 && value <= 50 ? '#28a745' : value > 50 && value <= 100 ? '#28a745' : value > 100 && value <= 200 ? '#28a745' : value > 200 && value <= 300 ? '#28a745' : value > 300 ? '#28a745' : '#28a745');
 
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
@@ -322,7 +322,7 @@
           <?= $bbdata['no2'] ?>
         <?php endforeach ?>
       ];
-      const colours = data.map((value) => value > 0 && value <= 50 ? '#28a745' : value > 50 && value <= 100 ? '#007bff' : value > 100 && value <= 200 ? '#ffc107' : value > 200 && value <= 300 ? '#dc3545' : value > 300 ? '#343a40' : 'purple');
+      const colours = data.map((value) => value > 0 && value <= 50 ? '#28a745' : value > 50 && value <= 100 ? '#28a745' : value > 100 && value <= 200 ? '#28a745' : value > 200 && value <= 300 ? '#28a745' : value > 300 ? '#28a745' : '#28a745');
 
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
