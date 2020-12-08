@@ -2,7 +2,7 @@
 
 use GuzzleHttp\Client;
 
-class Getdataaqms_m extends CI_model
+class Getdata_m extends CI_model
 {
 	
 	private $_client;
@@ -10,17 +10,18 @@ class Getdataaqms_m extends CI_model
 	public function __construct()
 	{
 		$this->_client 	= new Client([
-			'base_uri' 	=> 'http://ispumaps.id/restserverclientbalikpapan/'
+			'base_uri' 	=> 'http://ispumaps.id/restserverclientdata/'
 		]);
 	}
 
-	public function getbalikpapanbbdata()
+	public function get_data1()
 	{
 		try
 		{
-			$response = $this->_client->request('GET', 'api/get/aqmsdata/bb', [
+			$response = $this->_client->request('GET', 'api/show/indoor/data', [
 				'query' => [
-					'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA=='
+					'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA==',
+					'id_stasiun' => 'PELINDO2_01'
 				],
 			]);
 
@@ -35,13 +36,14 @@ class Getdataaqms_m extends CI_model
 		}
 	}
 
-	public function getbalikpapanbbispu()
+	public function get_data2()
 	{
 		try
 		{
-			$response = $this->_client->request('GET', 'api/get/aqmsispu/bb', [
+			$response = $this->_client->request('GET', 'api/show/indoor/data', [
 				'query' => [
-					'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA=='
+					'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA==',
+					'id_stasiun' => 'PELINDO2_02'
 				],
 			]);
 
@@ -56,13 +58,14 @@ class Getdataaqms_m extends CI_model
 		}
 	}
 
-	public function getbalikpapanpbdata()
+	public function get_ispu1()
 	{
 		try
 		{
-			$response = $this->_client->request('GET', 'api/get/aqmsdata/pb', [
+			$response = $this->_client->request('GET', 'api/show/indoor/ispu', [
 				'query' => [
-					'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA=='
+					'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA==',
+					'id_stasiun' => 'PELINDO2_01'
 				],
 			]);
 
@@ -77,13 +80,14 @@ class Getdataaqms_m extends CI_model
 		}
 	}
 
-	public function getbalikpapanpbispu()
+	public function get_ispu2()
 	{
 		try
 		{
-			$response = $this->_client->request('GET', 'api/get/aqmsispu/pb', [
+			$response = $this->_client->request('GET', 'api/show/indoor/ispu', [
 				'query' => [
-					'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA=='
+					'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA==',
+					'id_stasiun' => 'PELINDO2_02'
 				],
 			]);
 
