@@ -3,23 +3,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
 
-	function index()
+	public function index()
 	{
-		$data['pelindodata01'] 		= $this->getdata_m->get_data1();
-		$data['pelindoispu01'] 		= $this->getdata_m->get_ispu1();
-		$data['pelindodata02'] 		= $this->getdata_m->get_data2();
-		$data['pelindoispu02'] 		= $this->getdata_m->get_ispu2(1);
-
-		$this->load->view('kota/indoor/temp', $data);
+		$this->load->view('kota/balikpapan/home');
 	}
 
-	function chart()
+	public function chart()
 	{
-		$data['pelindodata01'] 		= $this->getdata_m->get_data1();
-		$data['pelindoispu01'] 		= $this->getdata_m->get_ispu1();
-		$data['pelindodata02'] 		= $this->getdata_m->get_data2();
-		$data['pelindoispu02'] 		= $this->getdata_m->get_ispu2(1);;
+		$data['balikpapanbbdata'] 		= $this->getdataaqms_m->getbalikpapanbbdata();
+		$data['balikpapanbbispu'] 		= $this->getdataaqms_m->getbalikpapanbbispu();
+		$data['balikpapanpbdata'] 		= $this->getdataaqms_m->getbalikpapanpbdata();
+		$data['balikpapanpbispu'] 		= $this->getdataaqms_m->getbalikpapanpbispu();
 
-		$this->load->view('kota/indoor/chart', $data);
+		$this->load->view('kota/balikpapan/balikpapan', $data);
+	}
+
+	function chartispu()
+	{
+		$data['balikpapanbbdata'] 		= $this->getdataaqms_m->getbalikpapanbbdata();
+		$data['balikpapanbbispu'] 		= $this->getdataaqms_m->getbalikpapanbbispu();
+		$data['balikpapanpbdata'] 		= $this->getdataaqms_m->getbalikpapanpbdata();
+		$data['balikpapanpbispu'] 		= $this->getdataaqms_m->getbalikpapanpbispu();
+
+		$this->load->view('kota/balikpapan/chart', $data);
 	}
 }
