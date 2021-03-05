@@ -23,7 +23,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+<<<<<<< HEAD
 $config['base_url'] = 'http://ispumaps.id/restclientbalikpapan/';
+=======
+$config['base_url'] = 'http://localhost/restclientpelindo';
+//  $config['base_url'] = 'http://ispumaps.id/restclientpelindo/';
+>>>>>>> 9b2e14d6137f274a24e9015d855bcd6e20edf602
 
 /*
 |--------------------------------------------------------------------------
